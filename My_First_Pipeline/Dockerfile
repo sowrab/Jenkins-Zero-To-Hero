@@ -1,7 +1,7 @@
 FROM node:16
 
 #install Python and dependecies
-RUN apt-get update && apt-get install -y python3 python3-pip && pip3install flask
+RUN apt-get update && apt-get install -y python3 python3-pip && pip3 install flask
 WORKDIR /app
 COPY . /app
 
